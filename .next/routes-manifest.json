@@ -1,0 +1,84 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/api/fixtures/[id]",
+      "regex": "^/api/fixtures/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/fixtures/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/strategies/[id]/bankroll-operation",
+      "regex": "^/api/strategies/([^/]+?)/bankroll\\-operation(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/strategies/(?<nxtPid>[^/]+?)/bankroll\\-operation(?:/)?$"
+    },
+    {
+      "page": "/api/strategies/[id]/selections",
+      "regex": "^/api/strategies/([^/]+?)/selections(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/strategies/(?<nxtPid>[^/]+?)/selections(?:/)?$"
+    },
+    {
+      "page": "/api/strategies/[id]/stats",
+      "regex": "^/api/strategies/([^/]+?)/stats(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/strategies/(?<nxtPid>[^/]+?)/stats(?:/)?$"
+    },
+    {
+      "page": "/api/strategies/[id]/update-result",
+      "regex": "^/api/strategies/([^/]+?)/update\\-result(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/strategies/(?<nxtPid>[^/]+?)/update\\-result(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

@@ -1,0 +1,23 @@
+{
+  "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
+  "/api/cron/update-fixtures": "pages/api/cron/update-fixtures.js",
+  "/api/cron/update-leagues": "pages/api/cron/update-leagues.js",
+  "/api/fixtures/[id]": "pages/api/fixtures/[id].js",
+  "/api/cron/update-odds": "pages/api/cron/update-odds.js",
+  "/api/cron/update-predictions": "pages/api/cron/update-predictions.js",
+  "/api/hello": "pages/api/hello.js",
+  "/api/strategies/[id]/bankroll-operation": "pages/api/strategies/[id]/bankroll-operation.js",
+  "/api/fixtures": "pages/api/fixtures.js",
+  "/api/leagues": "pages/api/leagues.js",
+  "/api/strategies/[id]/selections": "pages/api/strategies/[id]/selections.js",
+  "/api/strategies/[id]/update-result": "pages/api/strategies/[id]/update-result.js",
+  "/api/strategies/[id]/stats": "pages/api/strategies/[id]/stats.js",
+  "/api/strategies": "pages/api/strategies.js",
+  "/api/cron/update-teams": "pages/api/cron/update-teams.js",
+  "/": "pages/index.html",
+  "/api/test-cron": "pages/api/test-cron.js",
+  "/api/test-functions": "pages/api/test-functions.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
